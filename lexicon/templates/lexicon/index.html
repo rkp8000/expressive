@@ -1,0 +1,9 @@
+<h1>Term: "{{ term.term_text }}"</h1>
+<div id="examples" style="visibility: hidden">
+<h2>Example sentences:</h2>
+<p>
+{% for sentence in term.sentence_set.all %}
+    {{ sentence.sentence_text }}<br /><br />
+{% endfor %}
+</p>
+</div>
