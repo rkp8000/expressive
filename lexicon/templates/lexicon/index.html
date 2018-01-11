@@ -1,6 +1,12 @@
+<head>
+    <title>Lexicon</title>
+</head>
+
+<body>
 <h1>Lexicon</h1>
 {% if term_list %}
 {% for term in term_list %}
 <h2><a href="{% url 'lexicon:term_detail' term.id %}">{{ term.term_text }}</a></h2>
 {% endfor %}
 {% endif %}
+</body>

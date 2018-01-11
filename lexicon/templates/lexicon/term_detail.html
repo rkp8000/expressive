@@ -1,14 +1,26 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'lexicon/style.css' %}" />
+    <title>Lexicon</title>
+</head>
+
+<body>
+
+<div id="container">
+<h1>Expressive: Lexicon</h1>
+
 <div id="menu">
-    <a href="/admin">admin</a><br />
-    <a href="{% url 'lexicon:index' %}">index</a><br />
+    <a href="/admin">admin</a>
+    <a href="{% url 'lexicon:index' %}">index</a>
     <a href="{% url 'lexicon:random_term' %}">random</a>
 </div>
 
+<div id="content">
 <h2>{{ term.term_text }}</h2>
 
 <form action="{% url 'lexicon:add_sentence' term.id %}" method="post">
     {% csrf_token %}
-    <label for="sentence_text">Example sentence:</label><br />
+    <label for="sentence_text">Example sentence</label><br />
     <textarea name="sentence_text" id="sentence_text" rows="4" cols="100"></textarea><br />
     <input type="submit" value="Save example sentence" />
 </form>
@@ -22,3 +34,7 @@
 {% endfor %}
 </p>
 </div>
+</div>
+</div>
+
+</body>
