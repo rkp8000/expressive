@@ -10,13 +10,13 @@
 <h1>Expressive: Lexicon</h1>
 
 <div id="menu">
-    <a href="/admin">admin</a>
-    <a href="{% url 'lexicon:index' %}">index</a>
     <a href="{% url 'lexicon:random_term' %}">random</a>
+    <a href="{% url 'lexicon:index' %}">index</a>
+    <a href="/admin">admin</a>
 </div>
-
+<br />
 <div id="content">
-<h2>{{ term.term_text }}</h2>
+<h2>Term: {{ term.term_text }}</h2>
 
 <form action="{% url 'lexicon:add_sentence' term.id %}" method="post">
     {% csrf_token %}
