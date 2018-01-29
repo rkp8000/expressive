@@ -6,6 +6,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 20px;
+    font-size: 20px;
 }
 
 #menu {
@@ -22,4 +23,10 @@
     border-radius: 4px;
     background-color: #DDDDDD;
     padding: 10px;
+}
+
+textarea {
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
 }
