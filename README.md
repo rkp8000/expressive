@@ -40,3 +40,6 @@ To begin using the app, navigate to: 'localhost:8000/lexicon' in your browser.
 ![lexicon basic usage](https://media.giphy.com/media/3ohs4dshFqw3LVKbwk/giphy.gif)
 
 ![lexicon add term](https://media.giphy.com/media/xUOwG7cPcERvnfial2/giphy.gif)
+
+![lexicon random self test](https://media.giphy.com/media/l4pTaQiz5VSUbJmqk/giphy.gif)
+
