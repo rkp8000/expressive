@@ -7,7 +7,6 @@
         $(document).ready(function(){
 
             var example_sentences_visible = 0;
-            $("#example_sentences").hide();
 
             $("#example_sentence_toggle").click(function(){
 
@@ -49,7 +48,7 @@
 
 <a id="example_sentence_toggle" href="#">Show example sentences</a>
 
-<div id="example_sentences">
+<div id="example_sentences" style="display: none;">
 <h3>Example sentences</h3>
 <p>
 {% for sentence in term.sentence_set.all %}
