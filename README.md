@@ -1,5 +1,5 @@
 # Expressive
-Browser-based app for increasing the precision of your thoughts.
+A browser-based app for increasing the precision of your thoughts.
 
 # Installation
 
