@@ -37,5 +37,5 @@ To begin using the app, navigate to: 'localhost:8000/lexicon' in your browser.
 
 # Usage
 
-http://gph.is/2nvFlFT
+![basic usage](https://media.giphy.com/media/3ohs4dshFqw3LVKbwk/giphy.gif)
 
