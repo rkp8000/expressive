@@ -1,6 +1,28 @@
 <head>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'lexicon/style.css' %}" />
+    <script src="{% static 'lexicon/jquery-3.3.1.min.js' %}"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            var example_sentences_visible = 0;
+            $("#example_sentences").hide();
+
+            $("#example_sentence_toggle").click(function(){
+
+                $("#example_sentences").toggle("fast");
+
+                if (!example_sentences_visible) {
+                    example_sentences_visible = 1;
+                    $(this).html('Hide example sentences');
+                } else {
+                    example_sentences_visible = 0;
+                    $(this).html('Show example sentences');
+                }
+            });
+        });
+    </script>
     <title>Lexicon</title>
 </head>
 
@@ -25,9 +47,10 @@
     <input id="add_sentence_button" type="submit" value="Save" style="font-size:20px" />
 </form>
 
-<h3>Example sentences:</h3>
+<a id="example_sentence_toggle" href="#">Show example sentences</a>
 
-<div id="examples" style="color: white">
+<div id="example_sentences">
+<h3>Example sentences</h3>
 <p>
 {% for sentence in term.sentence_set.all %}
     {{ sentence.sentence_text }}<br /><br />
