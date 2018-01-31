@@ -10,11 +10,13 @@ Download Expressive into the directory of your choice:
 Enter directory and install requirements:
 
 `$ cd expressive`
+
 `$ pip install -r requirements.txt`
 
 Initialize Lexicon database:
 
 `$ python manage.py makemigrations lexicon`
+
 `$ python manage.py migrate`
 
 Create superuser:
