@@ -21,10 +21,14 @@ Create superuser:
 
 `$ python manage.py createsuperuser`
 
-Start server:
+# Launching Expressive
+
+Expressive runs as a webserver you access through your browser.
+
+To start the server:
 
 `$ python manage.py runserver 8000`
 
 (Change the last argument to specify a port besides 8000.)
 
-In your browser, navigate to: 'localhost:8000'.
+To begin using the app, navigate to: 'localhost:8000' in your browser.
