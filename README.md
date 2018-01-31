@@ -34,3 +34,8 @@ To start the server:
 (Change the last argument to specify a port besides 8000.)
 
 To begin using the app, navigate to: 'localhost:8000/lexicon' in your browser.
+
+# Usage
+
+http://gph.is/2nvFlFT
+
