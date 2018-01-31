@@ -21,7 +21,7 @@ Create superuser:
 
 `$ python manage.py createsuperuser`
 
-# Launching Expressive
+# Launching
 
 Expressive runs as a webserver you access through your browser.
 
