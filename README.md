@@ -43,3 +43,4 @@ To begin using the app, navigate to: 'localhost:8000/lexicon' in your browser.
 
 ![lexicon random self test](https://media.giphy.com/media/l4pTaQiz5VSUbJmqk/giphy.gif)
 
+![basic](https://media.giphy.com/media/xUOwG1Y7tbQrSOf0m4/giphy.gif)
